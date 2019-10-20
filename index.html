@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <img src="image/MyPhoto.jpg" alt="Photo" class="header__avatar" height="120">
+      <div class="header__links">
+        <a href="https://github.com/v1nger125" target="_blank">
+          <img src="image/github-logo.svg" alt="icon" height="30">
+        </a>
+        <a href="https://vk.com/id34214216" target="_blank">
+          <img src="image/vk-logo.svg" alt="icon" height="30">
+        </a>
+      </div>
+    </div>
+    <div class="header__info">
+      <h2 class="header__info_name">Dmitriq Berlin</h2>
+      <span>+7 929 703 82 97</span>
+      <span>dmtrbrln@gmail.com</span>
+    </div>
+  </header>
+  <main class="main">
+    <a href="" class="main__education">
+      <img src="image/arrow.svg" alt="icon" class="arrow"height="10">
+      EDUCATION 
+    </a>
+    <div class="main__move-section">
+      <ul class="main__list">
+        <li class="main__list_item">Bachelor of science: Samara National Research University named after academician S.P. Korolev 2015-2019.</li>
+        <li class="main__list_item">Master of science: Samara National Research University named after academician S.P. Korolev 2019-2021.</li>
+        <li class="main__list_item">Courses: RSSchool Javascript / Frontend 2019-2020</li>
+      </ul>
+      <div class="slider">
+        <div class="slider__container">
+          <div class="slider__item active">
+            <div class="slider__item_description">
+              <h4 class="slider__item_name">THEYALOW</h4>
+              <a href="projects/theyalow-frame/index.html" class="slider__item_link">SEE A LIVE</a>
+              <ul class="slider__item_list">
+                <li>Responsive</li>
+                <li>Pixel perfect</li>
+              </ul>
+            </div>
+            <img src="image/THEYALOW.png" alt="THEYALOW" class="slider__item_image">
+          </div>
+          <div class="slider__item">
+            <div class="slider__item_description">
+              <h4 class="slider__item_name">REPAIR DESIGN PROJECT</h4>
+              <a href="/projects/rdp-frame/index.html" class="slider__item_link">SEE A LIVE</a>
+              <ul class="slider__item_list">
+                <li>Not completed</li>
+              </ul>
+            </div>
+            <img src="image/repair_design_project.png" alt="repair_design project" class="slider__item_image">
+          </div>
+        </div>
+        <div class="slider__arrow slider__arrow_left">&lt;</div>
+        <div class="slider__arrow slider__arrow_right">&gt;</div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

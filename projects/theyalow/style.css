@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "Segoe WP";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/SegoeWP.woff") format('woff');
+}
+
+.header-wrapper {
+  height: 566px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-image: url(image/first_background.png);
+}
+.header {
+  max-width: 1020px;
+  height: 24%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-text {
+  font-size: 41px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav {
+  width: 453px;
+  height: 41px;
+  background-color: #f5c505;
+  box-shadow: -4px -4px hsla(48, 96%, 49%, 0.27), -8px -8px hsla(48, 96%, 49%, 0.27);
+  margin-top: 50px;
+}
+.nav-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-link {
+  width: 151px;
+  height: 41px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-border{
+  border-left: 1px solid hsla(48, 96%, 44%, 0.7);
+}
+.nav-text {
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #9b7d08;
+  font-family: "Segoe WP";
+  margin-left: 15px;
+}
+
+.slider {
+  width: 100%;
+  height: 76%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-arrow,
+.right-arrow {
+  width: 32px;
+  height: 57px;
+  background-color: hsla(48, 95%, 49%, 0.71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.first-video {
+  margin-bottom: 38px;
+  margin-left: 64px;
+}
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-right: 65px;
+}
+.first-text {
+  font-size: 63px;
+  letter-spacing: 1px;
+  font-family: "Asap", sans-serif;
+}
+.orange {
+  color: #f5c506;
+}
+.white {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*second section (with 3 same columns)*/
+.second-section {
+  height: 212px;
+  width: 100%;
+  background-image: url(image/second-background.png);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.26),0 -3px 3px rgba(0,0,0,0.26);
+  position: relative;
+  z-index: 10;
+}
+.second-grid {
+  display: grid;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1020px;
+  grid-template-columns: repeat(3,1fr)
+}
+.second-text {
+  font-size: 27px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.better-design,
+.customize,
+.its-free {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  border-left: 1px solid rgba(212, 212, 212, 0.7);
+}
+.its-free {
+  border-right: 1px solid rgba(212, 212, 212, 0.7);
+}
+
+/*third section (with orange background)*/
+.third-section {
+  height: 509px;
+  width: 100%;
+  background-image: url(image/third-background.png);
+  position: relative;
+  z-index: 1;
+}
+.news {
+  display: grid;
+  grid-template-rows: 233px 86px 81px;
+  grid-template-columns: 17fr 16fr 18fr;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.third-name {
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  height: 109px;
+  display: flex;
+  max-width: 1020px;
+  margin: 0 auto;
+  align-items: center;
+}
+.first-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ec9e03;
+}
+.first-news-text {
+  width: 80%;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP", sans-serif;
+  font-weight: 300;
+}
+.third-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ec9e03;
+  margin-left: 35px;
+}
+.link-news {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.twitter-date {
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.date-news {
+  grid-column: 1 / span 3;
+  background-color: #ddb101;
+  width: 112px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.day {
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe UI", sans-serif;
+}
+.slider-news {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: hsla(0, 0%, 100%, 0.48);
+  grid-column: 1 / span 3;
+  width: 88%;
+  height: 15px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 18px;
+}
+.slider-news::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 22%;
+  border-radius: 7px;
+  background-color: #ec9e03;
+}
+.chat {
+  display: none;
+}
+
+/*fourth section(with dark background)*/
+.fourth-section {
+  height: 499px;
+  width: 100%;
+  background-image: url(image/fourth-background.png);
+  display: grid;
+  grid-template-rows: 94px 405px;
+  grid-template-columns: 7fr 6fr;
+}
+.fourth-name{
+  grid-column: 1 / span 2;
+  font-size: 43px;
+  letter-spacing: 0px;
+  color: #f5c506;
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 5px;
+  align-self: end;
+  justify-self: center;
+}
+.fourth-img {
+  justify-self: end;
+}
+.fourth-list {
+  justify-self: center;
+  align-self: center;
+  width: 67%;
+  height: 55%;
+}
+.fourth-list li {
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "Open Sans", sans-serif;
+  list-style-image: url(image/li-marker.png);
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+
+/* footer */
+.footer {
+  height: 64px;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-shadow: 0 -3px 5px rgba(0,0,0,0.75);
+  background-color: #4c4c4c;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-left: 140px;
+  width: 54px;
+  height: 54px;
+}
+.footer-text {
+  font-size: 29px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 640px) {
+.header-wrapper {
+  height: 389px;
+  background-image: none;
+}
+.header {
+  height: 62px;
+  background-image: linear-gradient(0deg, #292927 0%, #474745 80%);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.26);
+  position: relative;
+  z-index: 10;
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+.header-text {
+  font-size: 19px;
+  margin: 0;
+}
+.logo-wrapper {
+  margin: 0;
+  height: 62px;
+  width: 187px;
+  justify-content: center;
+}
+.nav {
+  box-shadow: none;
+  margin: 0;
+  height: 62px;
+}
+.nav-link {
+  height: 62px;
+}
+.nav-text {
+  font-size: 19px;
+}
+
+.slider{
+  height: 327px;
+  position: relative;
+  z-index: 1;
+}
+.left-arrow,
+.right-arrow {
+  display: none;
+}
+.text-wrapper{
+  display: none;
+}
+.first-video {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.second-section {
+  height: 171px;
+  box-shadow: 0 -4px hsla(0, 0%, 100%, 0.5), 0 -8px rgba(255, 255, 255, 0.3);
+}
+.second-text {
+  font-size: 23px;
+  margin-top: 15px;
+}
+.second-image {
+  transform: scale(0.8);
+}
+.better-design,
+.customize,
+.its-free {
+  border: none;
+}
+
+.third-section {
+  height: 474px;
+  background: none;
+}
+.third-name {
+  display: none;
+}
+.slider-news {
+  display: none;
+}
+.date-news {
+  display: none;
+}
+.twitter-date {
+  display: none;
+}
+.news {
+  height: 100%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.first-news,
+.second-news {
+  margin: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 15px);
+}
+.first-news {
+  margin-right: 5px;
+}
+.second-news {
+  margin-left: 5px;
+}
+.first-news-text{
+  line-height: 33px;
+  height: 90%;
+  width: 90%;
+  overflow: hidden;
+}
+.video-news {
+  height: 100%;
+  width: 100%;
+}
+.third-news{
+  background-color: #f5c507;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.third-news .link-news {
+  display: none;
+}
+.chat {
+  background-color: #f5c507;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.message{
+  background-image: url(image/chat-message.png);
+  height: 43px;
+  width: 285px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.text {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #8f8e8e;
+  font-family: "Arial", sans-serif;
+  margin-left: 20px;
+}
+.send-message{
+  height: 31px;
+  width: 271px;
+  display: flex;
+}
+.input {
+  height: 29px;
+  width: 201px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.15);
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.button {
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 31px;
+  width: 70px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.15);
+  background-image: linear-gradient(0deg, #eaa927 0%, #cf8e0b 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fourth-section {
+  height: 466px;
+  background-image: none;
+  background-color: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-list {
+  display: none;
+}
+.fourth-name {
+  font-size: 39px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 45px;
+  align-self: center;
+}
+
+.footer {
+  height: 44px;
+}
+.footer-logo {
+  width: 31px;
+  height: 31px;
+  margin-left: 65px;
+}
+.footer-text {
+  font-size: 17px;
+  margin-left: 10px;
+}
+}
+
