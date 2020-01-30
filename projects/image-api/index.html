@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Palette</title>
+</head>
+<body>
+  <div class="body-wrapper">
+    <header class="header">
+      <img src="image/nav-icon.svg" alt="icon" class="header__logo">
+      <span class="header__name">
+        Draw
+      </span>
+    </header>
+    <main class="main">
+      <div class="main__left">
+        <div class="left__tool-list">
+          <div class="list__item">
+            <img src="image/pencil-icon.svg" alt="icon" class="list__item_image">
+            <span class="list__item_text">Pencil</span>
+          </div>
+          <div class="list__item">
+            <img src="image/paint-bucket-icon.svg" alt="icon" class="list__item_image">
+            <span class="list__item_text">Paint bucket</span>
+          </div>
+          <div class="list__item">
+            <img src="image/choose-color-icon.svg" alt="icon" class="list__item_image">
+            <span class="list__item_text">Choose color</span>
+          </div>
+          <div class="list__item inactive">
+            <img src="image/transform-icon.svg" alt="icon" class="list__item_image">
+            <span class="list__item_text">Transform</span>
+          </div>
+        </div>
+        <div class="left__color-list">
+          <div class="list__item">
+            <div class="list__item_color"></div>
+            <span class="list__item_text">Current color</span>
+            <input type="color" class="list__item_palette" id="palette">
+          </div>
+          <div class="list__item">
+            <div class="list__item_color"></div>
+            <span class="list__item_text">Prev color</span>
+          </div>
+          <div class="list__item">
+            <div class="list__item_color red"></div>
+            <span class="list__item_text">Red</span>
+          </div>
+          <div class="list__item">
+            <div class="list__item_color green"></div>
+            <span class="list__item_text">Green</span>
+          </div>
+        </div>
+      </div>
+      <div class="main__canvas-wrapper">
+        <div class="canvas__top_setting">
+          <div class="canvas__top_button">Load</div>
+          <div class="canvas__top_input-wrapper">
+            <img class="canvas__top_input-icon" src="image/search-icon.svg" alt="icon">
+            <input class="canvas__top_input" type="text" name="city" id="city">
+          </div>
+          <div class="canvas__top_button">B&W</div>
+        </div>
+        <canvas id="canvas" class="main__canvas" width="512" height="512">Your browser is too old</canvas>
+      </div>
+      <div class="main__right">
+        <div class="right__size-list">
+          <div class="list__item">
+            <span class="list__item_text">64x64</span>
+          </div>
+          <div class="list__item">
+            <span class="list__item_text">128x128</span>
+          </div>
+          <div class="list__item">
+            <span class="list__item_text">256x256</span>
+          </div>
+          <div class="list__item">
+            <span class="list__item_text">512x512</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
